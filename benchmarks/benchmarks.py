@@ -11,8 +11,8 @@ class TimeSuite:
     """
     
     def setup(self):
-        LENGTH = 100
-        random.seed(10)
+        LENGTH = 10
+        #random.seed(10)
         self.array = [random.randint(0, 1000) for i in range(LENGTH)]
 
     def time_insertion_sort(self):
