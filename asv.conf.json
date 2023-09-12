@@ -177,10 +177,11 @@
     // with results. If the commit is `null`, regression detection is
     // skipped for the matching benchmark.
     //
-    // "regressions_first_commits": {
+    "regressions_first_commits": {
+        ".*": "21d55d75988768c1f8b5d58de671e888bae77a3d",
     //    "some_benchmark": "352cdf",  // Consider regressions only after this commit
     //    "another_benchmark": null,   // Skip regression detection altogether
-    // },
+    },
 
     // The thresholds for relative change in results, after which `asv
     // publish` starts reporting regressions. Dictionary of the same
