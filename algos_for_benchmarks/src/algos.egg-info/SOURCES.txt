@@ -1,0 +1,8 @@
+pyproject.toml
+src/__init__.py
+src/insertion_sort.py
+src/algos.egg-info/PKG-INFO
+src/algos.egg-info/SOURCES.txt
+src/algos.egg-info/dependency_links.txt
+src/algos.egg-info/requires.txt
+src/algos.egg-info/top_level.txt
