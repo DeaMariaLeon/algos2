@@ -1,6 +1,6 @@
 #Insertion Sort
 import time
-time.sleep(3)
+
 def sort(array: list[int]) -> list[int]:
     for i in range(1, len(array)):
         key_item = array[i]
@@ -9,5 +9,5 @@ def sort(array: list[int]) -> list[int]:
             array[j + 1] = array[j]
             j -= 1
         array[j + 1] = key_item
-
+    time.sleep(3)
     return array
