@@ -9,5 +9,5 @@ def sort(array: list[int]) -> list[int]:
             array[j + 1] = array[j]
             j -= 1
         array[j + 1] = key_item
-    time.sleep(3)
+    #time.sleep(3)
     return array
