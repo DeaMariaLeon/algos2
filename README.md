@@ -1,2 +1,2 @@
 # algos2
-Testing asv benckmarks
+Testing asv benchmarks
