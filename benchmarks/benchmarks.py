@@ -17,3 +17,7 @@ class TimeSuite:
 
     def time_insertion_sort(self):
         sort(self.array)
+
+    time_insertion_sort.date_scale = "True"
+    time_insertion_sort.repeat = 3
+    time_insertion_sort.number = 4
