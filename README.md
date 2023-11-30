@@ -1,2 +1,3 @@
 # algos2
-Testing asv benchmarks
+First step when working with benchmarks project - using asv with a toy project
+
