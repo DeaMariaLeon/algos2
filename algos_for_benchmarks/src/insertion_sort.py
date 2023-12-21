@@ -2,7 +2,7 @@
 import time
 
 def sort(array: list[int]) -> list[int]:
-    time.sleep(1.7)
+    time.sleep(1.9)
     for i in range(1, len(array)):
         key_item = array[i]
         j = i - 1
