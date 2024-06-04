@@ -7,10 +7,6 @@ autolabeler:
     title:
       # Example: feat!: ...
       - '/^(build|chore|ci|depr|docs|feat|fix|perf|refactor|release|test)(\(.*\))?\!\: /'
-  - label: breaking python
-    title:
-      # Example: feat(python!): ...
-      - '/^(build|chore|ci|depr|docs|feat|fix|perf|refactor|release|test)\(.*python\!.*\)\: /'
   - label: build
     title:
       - '/^build/'
@@ -35,10 +31,6 @@ autolabeler:
   - label: release
     title:
       - '/^release/'
-
-template: |
-  $CHANGES
-
   categories:
   - title: 🏆 Highlights
     labels: highlight
@@ -60,6 +52,9 @@ template: |
       - revert
       - style
       - test
+
+template: |
+  $CHANGES
 
   Thank you to all our contributors for making this release possible!
   $CONTRIBUTORS
