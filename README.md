@@ -10,4 +10,4 @@ The second time this was useful, was to create templates for [Narwhals](https://
 The templates are used when issues and pull requests are opened. I first made sure they worked on this project, 
 then I contributed them to Narwhals. 
 
-WIP: testing "release drafter"..second
+WIP: testing "release drafter"..second ..
