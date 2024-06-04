@@ -1,3 +1,8 @@
+exclude-labels:
+  - skip changelog
+  - release
+change-template: '- $TITLE (#$NUMBER)'
+
 autolabeler:
   - label: python
     title:
@@ -34,26 +39,27 @@ autolabeler:
 categories:
   - title: 🏆 Highlights
     labels: highlight
-  - title: ⚠️ Breaking changes
-    labels: breaking
+  - title: 💥 Breaking changes
+    labels:
+      - breaking
+      - breaking python
+  - title: ⚠️ Deprecations
+    labels: deprecation
   - title: 🚀 Performance improvements
     labels: performance
   - title: ✨ Enhancements
     labels: enhancement
   - title: 🐞 Bug fixes
     labels: fix
+  - title: 📖 Documentation
+    labels: documentation
+  - title: 📦 Build system
+    labels: build
   - title: 🛠️ Other improvements
-    labels:
-      - build
-      - chore
-      - ci
-      - docs
-      - refactor
-      - revert
-      - style
-      - test
+    labels: internal
 
 template: |
-  $CHANGES
+  ## Changes
 
+  $CHANGES
 
