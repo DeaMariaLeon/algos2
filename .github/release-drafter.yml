@@ -1,14 +1,38 @@
-exclude-labels:
-  - skip changelog
-  - release
+
+categories:
+  - title: 🏆 Highlights
+    labels: highlight
+  - title: ⚠️ Breaking changes
+    labels: breaking
+  - title: 🚀 Performance improvements
+    labels: performance
+  - title: ✨ Enhancements
+    labels: enhancement
+  - title: 🐞 Bug fixes
+    labels: fix
+  - title: 🛠️ Other improvements
+    labels:
+      - build
+      - chore
+      - ci
+      - docs
+      - refactor
+      - revert
+      - style
+      - test
 
 change-template: '- $TITLE (#$NUMBER)'
 change-title-escapes: '\<*_&'
 replacers:
   # Remove conventional commits from titles
-  - search: '/- (build|chore|ci|depr|docs|feat|fix|perf|refactor|release|test)(\(.*\))?(\!)?\: /g'
+  - search: '/- (build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\(.*\))?(\!)?\: /g'
     replace: '- '
 
+version-resolver:
+  minor:
+    labels: breaking
+  default: patch
+  
 autolabeler:
   - label: python
     title:
