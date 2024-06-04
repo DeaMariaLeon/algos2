@@ -31,7 +31,7 @@ autolabeler:
   - label: release
     title:
       - '/^release/'
-  categories:
+categories:
   - title: 🏆 Highlights
     labels: highlight
   - title: ⚠️ Breaking changes
