@@ -33,7 +33,7 @@ autolabeler:
       - '/^depr/'
   - label: documentation
     title:
-      - '/^docs/'
+      - '/^(docs|docstring)/'
   - label: enhancement
     title:
       - '/^feat/'
