@@ -31,7 +31,7 @@ autolabeler:
   - label: release
     title:
       - '/^release/'
-  categories:
+categories:
   - title: 🏆 Highlights
     labels: highlight
   - title: ⚠️ Breaking changes
@@ -57,5 +57,3 @@ template: |
   $CHANGES
 
 
-  Thank you to all our contributors for making this release possible!
-  $CONTRIBUTORS
