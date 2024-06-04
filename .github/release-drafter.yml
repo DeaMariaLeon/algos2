@@ -1,16 +1,11 @@
 exclude-labels:
   - skip changelog
   - release
-name-template: 'v$RESOLVED_VERSION 🌈'
+name-template: 'v$RESOLVED_VERSION'
 tag-template: 'v$RESOLVED_VERSION'
 
 
-change-template: '- $TITLE (#$NUMBER)'
-change-title-escapes: '\<*_&'
-replacers:
-  # Remove conventional commits from titles
-  - search: '/- (build|chore|ci|depr|docs|feat|fix|perf|refactor|release|test)(\(.*\))?(\!)?\: /g'
-    replace: '- '
+change-template: '- $TITLE (#$NUMBER)' 
     
 autolabeler:
   - label: breaking
@@ -41,6 +36,7 @@ autolabeler:
   - label: release
     title:
       - '/^release/'
+      
 version-resolver:
   major:
     labels:
@@ -59,7 +55,6 @@ categories:
   - title: 💥 Breaking changes
     labels:
       - breaking
-      - breaking python
   - title: ⚠️ Deprecations
     labels: deprecation
   - title: 🚀 Performance improvements
@@ -80,3 +75,5 @@ template: |
 
   $CHANGES
 
+  Thank you to all our contributors for making this release possible!
+  $CONTRIBUTORS
