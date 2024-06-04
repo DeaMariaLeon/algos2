@@ -18,10 +18,6 @@ autolabeler:
     title:
       # Example: feat!: ...
       - '/^(build|chore|ci|depr|docs|feat|fix|perf|refactor|release|test)(\(.*\))?\!\: /'
-  - label: breaking rust
-    title:
-      # Example: feat(rust!, python): ...
-      - '/^(build|chore|ci|depr|docs|feat|fix|perf|refactor|release|test)\(.*rust\!.*\)\: /'
   - label: breaking python
     title:
       # Example: feat(python!): ...
@@ -37,7 +33,7 @@ autolabeler:
       - '/^depr/'
   - label: documentation
     title:
-      - '/^docs/'
+      - '/^(docs|docstring)/'
   - label: enhancement
     title:
       - '/^feat/'
