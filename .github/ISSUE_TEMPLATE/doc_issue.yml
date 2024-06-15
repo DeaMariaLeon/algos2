@@ -5,7 +5,7 @@ title: "[Doc]: "
 body:
 - type: markdown
   attributes:
-    values: > 
+    value: > 
          ## Thanks for taking the time to fill out this form
 - type: dropdown
   id: TYPE
