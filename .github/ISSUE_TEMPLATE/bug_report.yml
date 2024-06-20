@@ -48,9 +48,11 @@ body:
     render: shell
     description: |
       What version of Narwhals and dataframe libraries are you running?
-      You could run the following and provide the output below.
-      ```
-      pip freeze | grep -E "narwhals|polars|pandas|modin|cudf"
+      Please run narwhals.show_version() on the terminal and enter the output below.
+      You could do:
+      ```python
+      import narwhals
+      narwhals.show_versions()
       ```
   validations:
     required: true
