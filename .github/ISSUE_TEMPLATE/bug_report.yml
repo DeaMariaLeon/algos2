@@ -45,7 +45,7 @@ body:
 - type: textarea
   attributes:
     label: What version of Narwhals and dataframe libraries are you running?
-      Please run narwhals.show_version() on the terminal and enter the output below.
+      Run narwhals.show_version() and enter the output below.
     render: shell
     description: |
       What version of Narwhals and dataframe libraries are you running?
