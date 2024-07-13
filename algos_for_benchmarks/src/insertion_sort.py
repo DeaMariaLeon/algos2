@@ -2,6 +2,8 @@
 import time
 
 def sort(array: list[int]) -> list[int]:
+    """ 
+    """
     time.sleep(1)
     for i in range(1, len(array)):
         key_item = array[i]
