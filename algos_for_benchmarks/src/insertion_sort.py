@@ -3,6 +3,7 @@ import time
 
 def sort(array: list[int]) -> list[int]:
     """ 
+    my docs
     """
     time.sleep(1)
     for i in range(1, len(array)):
