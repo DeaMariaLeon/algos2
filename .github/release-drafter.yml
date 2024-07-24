@@ -32,6 +32,9 @@ autolabeler:
   - label: release
     title:
       - '/^release/'
+  - label: 'skip changelog'
+    title:
+      - '/^[pre-commit.ci]'
 categories:
   - title: 🏆 Highlights
     labels: highlight
