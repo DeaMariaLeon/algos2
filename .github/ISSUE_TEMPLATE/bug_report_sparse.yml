@@ -46,8 +46,6 @@ body:
 - type: textarea
   attributes:
     label: Please describe your system.
-    render: shell
-    placeholder: |
       1. OS and version: [e.g. Windows 10]
       2. `sparse` version (`sparse.__version__`)
       3. NumPy version (`np.__version__`)
