@@ -22,7 +22,9 @@ jobs:
       #  - Install your dependencies
       #  - Build your benchmarks (if using a compiled language)
       # ...
+      - name: Install dependencies
+        run: pip install -r requirements.txt
       - name: Run benchmarks
-        uses: CodSpeedHQ/action@v3
+        uses: CodSpeedHQ/action@v4
         with:
           run: pytest benchmarks/ --codspeed
