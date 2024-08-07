@@ -1,4 +1,0 @@
-numpy
-python
-pytest
-pytest-codspeed
