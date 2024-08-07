@@ -16,7 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v3
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
       # ...
       # Setup your environment here:
       #  - Configure your Python/Rust/Node version
@@ -24,7 +27,7 @@ jobs:
       #  - Build your benchmarks (if using a compiled language)
       # ...
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install .
       - name: Run benchmarks
         uses: CodSpeedHQ/action@v3
         with:

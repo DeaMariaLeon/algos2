@@ -1,4 +1,4 @@
-from algos_for_benchmarks.src.insertion_sort import sort
+from src.algos2.insertion_sort import sort
 import random
 
 def test_1(benchmark):
