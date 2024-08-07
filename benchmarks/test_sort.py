@@ -10,8 +10,12 @@ def test_1(benchmark):
     array = [random.randint(0, 1000) for i in range(LENGTH)]
 
     @benchmark
-    def time_insertion_sort():
+    def test_insertion_sort():
         sort(array)
+    
+    @benchmark
+    def test_insertion2():
+        median(array)
 
 @pytest.mark.benchmark
 def test_median_performance():
