@@ -1,4 +1,6 @@
 from src.algos2.insertion_sort import sort
+import pytest
+from statistics import median
 import random
 
 def test_1(benchmark):
@@ -8,5 +10,14 @@ def test_1(benchmark):
     array = [random.randint(0, 1000) for i in range(LENGTH)]
 
     @benchmark
-    def time_insertion_sort():
+    def test_insertion_sort():
         sort(array)
+        median(array)
+    
+    #@benchmark
+    #def test_insertion2():
+    #    len(array)
+
+#@pytest.mark.benchmark
+#def test_median_performance():
+#    return median([1, 2, 3, 4, 5])
