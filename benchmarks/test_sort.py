@@ -15,7 +15,7 @@ def test_1(benchmark):
     
     @benchmark
     def test_insertion2():
-        median(array)
+        len(array)
 
 @pytest.mark.benchmark
 def test_median_performance():
