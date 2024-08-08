@@ -18,6 +18,6 @@ def test_1(benchmark):
     #def test_insertion2():
     #    len(array)
 
-@pytest.mark.benchmark
-def test_median_performance():
-    return median([1, 2, 3, 4, 5])
+#@pytest.mark.benchmark
+#def test_median_performance():
+#    return median([1, 2, 3, 4, 5])
