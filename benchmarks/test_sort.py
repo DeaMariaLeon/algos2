@@ -12,10 +12,11 @@ def test_1(benchmark):
     @benchmark
     def test_insertion_sort():
         sort(array)
+        median(array)
     
-    @benchmark
-    def test_insertion2():
-        len(array)
+    #@benchmark
+    #def test_insertion2():
+    #    len(array)
 
 @pytest.mark.benchmark
 def test_median_performance():
