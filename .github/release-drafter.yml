@@ -10,7 +10,7 @@ autolabeler:
       - '/^(build|chore|ci|depr|docs|feat|fix|perf|refactor|release|test)(\(.*\))?\!\: /'
   - label: build
     title:
-      - '/^((?i)build)/'
+      - '/^[B|b]uild/'
   - label: internal
     title:
       - '/^(chore|ci|refactor|test)/'
