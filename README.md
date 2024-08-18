@@ -11,7 +11,7 @@ The templates are used when issues and pull requests are opened. I first made su
 then I contributed them to Narwhals. 
 
 Testing "release drafter" labels for Narwhals and Sparse. Now changing regex, again. 
-Using (?i) to ignore lowercase/uppercase with regex doesn't work.
+Using (?i) to ignore lowercase/uppercase with regex doesn't work. Now testing long regex.
 
 Added benchmarking tool CodSpeed to test before adding it to another repo.
 
