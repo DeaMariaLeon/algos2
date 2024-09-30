@@ -1,23 +1,15 @@
-name: Pre-fill PR Title with "doc"
-
 on:
   pull_request:
     types: [opened, edited]
 
 jobs:
-  update-title:
+  title-check:
     runs-on: ubuntu-latest
     steps:
-      - name: Update PR title
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          pr_title="${{ github.event.pull_request.title }}"
-          if [[ "$pr_title" != doc* ]]; then
-            new_title="doc: $pr_title"
-            curl -s -X PATCH \
-            -H "Authorization: token $GITHUB_TOKEN" \
-            -H "Accept: application/vnd.github.v3+json" \
-            https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }} \
-            -d "{\"title\":\"$new_title\"}"
-          fi
+    - name: Check PR title
+      run: |
+        if [[ ! "${{ github.event.pull_request.title }}" =~ ^(build|chore|ci|depr|docs|feat|fix|perf|refactor|release|test|\[pre-commit.ci\]) ]]; then
+          echo "::error::PR title must follow the format '[Issue #] - Description'"
+          exit 1
+        fi
+
