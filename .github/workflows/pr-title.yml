@@ -9,7 +9,7 @@ jobs:
     - name: Check PR title
       run: |
         if [[ ! "${{ github.event.pull_request.title }}" =~ ^(build|chore|ci|depr|docs|feat|fix|perf|refactor|release|test|\[pre-commit.ci\]) ]]; then
-          echo "::error::PR title must follow the format '[Issue #] - Description'"
+          echo "::error::PR title must start with build|chore|ci|depr|docs|feat|fix|perf|refactor|release|test "
           exit 1
         fi
 
