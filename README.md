@@ -10,7 +10,7 @@ The second time this was useful, was to create templates for [Narwhals](https://
 The templates are used when issues and pull requests are opened. I first made sure they worked on this project, 
 then I contributed them to Narwhals. 
 
-Testing "release drafter" labels for Narwhals and Sparse. Now changing regex. Working on PR title.
+Testing "release drafter" labels for Narwhals and Sparse. Now changing regex. Working on PR title. Again after adding action.
 
 Added benchmarking tool CodSpeed to test before adding it to another repo. 
 
