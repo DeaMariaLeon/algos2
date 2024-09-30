@@ -22,19 +22,19 @@ autolabeler:
       - '/^(docs|docstring)/'
   - label: enhancement
     title:
-      - '/^feat/'
+      - '/^(feat)/'
   - label: fix
     title:
-      - '/^fix/'
+      - '/^(fix)/'
   - label: performance
     title:
-      - '/^perf/'
+      - '/^(perf)/'
   - label: release
     title:
-      - '/^release/'
+      - '/^(release)/'
   - label: 'skip changelog'
     title:
-      - '/^\[pre-commit.ci\]/'
+      - '/^(\[pre-commit.ci\])/'
 categories:
   - title: 🏆 Highlights
     labels: highlight
