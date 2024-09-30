@@ -1,25 +1,15 @@
-name: Check PR title
- 
-on: 
-  push: 
-    branches:
-    - main
-  # pull_request event is required only for autolabeler
+name: Validate PR Title
+
+on:
   pull_request:
-    types: [opened, reopened, synchronize, edited]
-  # pull_request_target event is required for autolabeler to support PRs from forks
-  pull_request_target:
-    types: [opened, reopened, synchronize, edited]
+    types: [opened, edited]
 jobs:
-  check_pr_title:
-    runs_on: ubuntu-latest
-    env:
-      TITLE: ${{ github.event.pull_request.title }}
-    run: |
-      if [[ "$TITLE" =~ ^octocat ]]; then
-      echo "PR title starts with 'octocat'"
-      exit 0
-      else
-      echo "PR title did not start with 'octocat'"
-      exit 1
-      fi
+  title-check:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check PR title
+      run: |
+        if [[ ! "${{ github.event.pull_request.title }}" =~ ^\[[0-9]+\]\  ]]; then
+          echo "::error::PR title must follow the format '[Issue #] - Description'"
+          exit 1
+        fi
