@@ -14,4 +14,5 @@ jobs:
     - name: Run a one-line script
       run: |
           echo "A Label is required."
+          echo ${{ github.event.label.name}} 
           exit 1
