@@ -2,7 +2,7 @@ name: Labels
 
 on:
   pull_request:
-    types: [ opened, reopened, synchronize, edited ]
+    types: [ opened, reopened, synchronize, edited, labeled ]
 
 jobs:
   build:
