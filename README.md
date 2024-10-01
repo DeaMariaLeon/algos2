@@ -12,5 +12,5 @@ then I contributed them to Narwhals.
 
 Testing "release drafter" labels for Narwhals and Sparse. Working on PR title. Checking labels on CI.
 
-Added benchmarking tool CodSpeed to test before adding it to another repo..
+Added benchmarking tool CodSpeed to test before adding it to another repo.
 
