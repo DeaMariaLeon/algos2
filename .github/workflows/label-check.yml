@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    if: ${{ github.event.label.name == '' }}
+    if: github.event.pull_request.labels[0] == null
     runs-on: ubuntu-latest
 
     steps:
@@ -14,5 +14,4 @@ jobs:
     - name: Run a one-line script
       run: |
           echo "A Label is required."
-          echo ${{ github.event.label.name}} 
           exit 1
