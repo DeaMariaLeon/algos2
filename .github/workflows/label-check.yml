@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    if: github.event.pull_request.labels[0] == null
+    if: ${{github.event.pull_request.labels[0] == null }}
     runs-on: ubuntu-latest
 
     steps:
